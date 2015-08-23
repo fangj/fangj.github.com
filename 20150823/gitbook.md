@@ -1,3 +1,4 @@
+## GitBook
 在目录下建2个文件，README.md和SUMMARY.md
 SUMMARY.md格式如下
 
@@ -11,3 +12,7 @@ SUMMARY.md格式如下
 	Starting server ...
 	Serving book on http://localhost:4000
 打开 http://localhost:4000 就可以看到了
+
+
+## 生成PDF 
+gitbook pdf .

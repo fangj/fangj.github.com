@@ -12,9 +12,14 @@
 	git checkout -- master
 
 
-### 参考：
+### 参考： 
 
 http://marklodato.github.io/visual-git-guide/index-zh-cn.html  
 http://stackoverflow.com/questions/13321458/meaning-of-git-checkout-double-dashes  
-http://unix.stackexchange.com/questions/11376/what-does-double-dash-mean-also-known-as-bare-double-dash
-[Git简明手册](../extra/git/Git简明手册.pdf)
+http://unix.stackexchange.com/questions/11376/what-does-double-dash-mean-also-known-as-bare-double-dash  
+[Git简明手册](git/Git简明手册.pdf)  
+[book.pdf](git/book.pdf)  
+[git_cheat_sheet.pdf](git/git_cheat_sheet.pdf)  
+[git_magic.pdf](git/git_magic.pdf)  
+[github-git-cheat-sheet.pdf](git/github-git-cheat-sheet.pdf)  
+[progit-zh.761.epub](git/progit-zh.761.epub)  

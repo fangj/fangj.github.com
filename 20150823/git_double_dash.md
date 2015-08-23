@@ -17,3 +17,4 @@
 http://marklodato.github.io/visual-git-guide/index-zh-cn.html  
 http://stackoverflow.com/questions/13321458/meaning-of-git-checkout-double-dashes  
 http://unix.stackexchange.com/questions/11376/what-does-double-dash-mean-also-known-as-bare-double-dash
+[Git简明手册](../extra/git/Git简明手册.pdf)

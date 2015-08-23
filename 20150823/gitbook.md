@@ -16,3 +16,6 @@ SUMMARY.md格式如下
 
 ## 生成PDF 
 gitbook pdf .
+
+## 参考
+http://help.gitbook.com/  

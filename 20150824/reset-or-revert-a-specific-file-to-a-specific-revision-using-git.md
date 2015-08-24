@@ -1,10 +1,7 @@
 # git如何恢复旧版本中一个文件
 
-`git checkout commit-hash file/to/restore`  
+`git checkout <commit> <filename>`  
 
-  
-commit-hash :git log中commit的hash  
-file/to/restore: 要恢复的文件
 
 
 ### 参考  

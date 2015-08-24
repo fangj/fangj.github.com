@@ -9,4 +9,4 @@
 * 20150824  
  * [如何查看目录大小](20150824/du.md) 	
  * [Mac下启动Apache](20150824/mac-apache.md) 	
- * [git如何恢复旧版本中一个文件](20150824/reset-or-revert-a-specific-file-to-a-specific-revision-using-git) 
+ * [git如何恢复旧版本中一个文件](20150824/reset-or-revert-a-specific-file-to-a-specific-revision-using-git.md) 

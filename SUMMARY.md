@@ -6,3 +6,6 @@
  * [pandoc转换html为slides](20150823/pandoc_slides.md)
  * [七牛作为静态web服务器](20150823/qiniu_as_webserver.md)
  * [git命令中的`--`是什么意思](20150823/git_double_dash.md)
+* 20150824  
+ * [如何查看目录大小](20150824/du.md) 	
+ * [Mac下启动Apache](20150824/mac-apache.md) 	

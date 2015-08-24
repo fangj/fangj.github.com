@@ -1,6 +1,0 @@
-{
-    "src":          "/home/your/sync_dir",
-    "dest":         "qiniu:access_key=<AccessKey>&secret_key=<SecretKey>&bucket=<Bucket>",
-    "debug_level":  1
-}
-

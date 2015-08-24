@@ -1,0 +1,12 @@
+* 20150823
+ * [gitbook](20150823/gitbook.md)
+ * [在coding上部署gitbook](20150823/gitbook-coding.md)
+ * [命令行转换文件编码](20150823/convert_encoding_console.md)
+ * [pandoc转换html为markdown](20150823/pandoc.md)
+ * [pandoc转换html为slides](20150823/pandoc_slides.md)
+ * [七牛作为静态web服务器](20150823/qiniu_as_webserver.md)
+ * [git命令中的`--`是什么意思](20150823/git_double_dash.md)
+* 20150824  
+ * [如何查看目录大小](20150824/du.md) 	
+ * [Mac下启动Apache](20150824/mac-apache.md) 	
+ * [git如何恢复旧版本中一个文件](20150824/reset-or-revert-a-specific-file-to-a-specific-revision-using-git.md) 

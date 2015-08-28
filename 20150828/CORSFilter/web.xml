@@ -1,0 +1,9 @@
+ <!-- CORS filter-->
+    <filter>
+        <filter-name>CORSFilter</filter-name>
+        <filter-class>com.dreamvoc.microcard.common.filter.CORSFilter</filter-class> <!--CORSFilter 的JAVA完整包名 -->
+    </filter>
+    <filter-mapping>
+        <filter-name>CORSFilter</filter-name>
+        <url-pattern>/*</url-pattern>  <!-- 匹配哪些url要用 CORSFilter -->
+    </filter-mapping>

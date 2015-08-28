@@ -1,0 +1,76 @@
+反向代理缓冲服务器
+Reverse Proxy
+
+或者
+CDN (Content Delivery Network)
+
+
+起因：
+为了应付如金智停车项目，要求部署在自己服务器。又要防止其逆向代码。
+使用反向代理，类似akaima，转发并缓存来自真实服务器的服务
+优点：
+1. 隐藏了真实的服务代码
+2. 减少了对原始服务器的访问，理论上每个不同的访问只访问一次
+
+除技术手段外，需要法律手段:
+1. 只提供web 服务，不提供代码部署
+2. 不得逆向工程
+
+名词解释：
+反向代理是和前两种代理完全不同的一种代理服务。使用它可以降低原始WEB服务器的负载。反向代理服务器承担了对原始WEB服务器的静态页面的请求，防止原始服务器过载。它位于本地WEB服务器和Internet之间，处理所有对WEB服务器的请求，阻止了WEB服务器和Internet的直接通信。如果互联网用户请求的页面在代理服务器上有缓冲的话，代理服务器直接将缓冲内容发送给用户。如果没有缓冲则先向WEB服务器发出请求，取回数据，本地缓存后再发送给用户。这种方式通过降低了向WEB服务器的请求数从而降低了WEB服务器的负载。
+
+
+候选：
+nginx
+squid
+Varnish
+Polipo
+TinyProxy
+
+步骤：
+1. 忽略过期 
+2. 增大缓存
+
+* 忽略过期
+
+http://www.php-oa.com/2008/01/22/zaisquid26zhongrefrerefresh_patterndeyixielijiehejianyi.html
+
+ignore-reload
+该选项导致 squid 忽略请求里的任何 no-cache 指令.
+所以.如果希望内容一进入 cache 就不删除,直到被主动 purge 掉为止,可以加上 ignore-reload 选项,这个我们常用在mp3,wma,wmv,gif之类.
+
+http://www.squid-cache.org/Doc/config/refresh_pattern/
+
+		override-expire enforces min age even if the server
+		sent an explicit expiry time (e.g., with the
+		Expires: header or Cache-Control: max-age). Doing this
+		VIOLATES the HTTP standard.  Enabling this feature
+		could make you liable for problems which it causes.
+
+		ignore-reload ignores a client no-cache or ``reload''
+		header. Doing this VIOLATES the HTTP standard. Enabling
+		this feature could make you liable for problems which
+		it causes.
+
+
+Examples:
+refresh_pattern -i \.mp3$ 1440 50% 2880 ignore-reload
+
+* 增大缓存
+http://superuser.com/questions/728995/how-to-cache-all-data-with-squid-facebook-videos-downloads-and-exe-qnap
+
+# Uncomment and adjust the following to add a disk cache directory.
+
+#cache_dir ufs /share/MD0_DATA/.qpkg/Squid/opt/var/squid/cache 100 16 256
+
+cache_mem 8 MB minimum_object_size 0 bytes maximum_object_size 200 MB maximum_object_size_in_memory 512 KB
+
+become
+
+cache_dir ufs /share/MD0_DATA/.qpkg/Squid/opt/var/squid/cache 4000 16 256
+
+cache_mem 8 MB minimum_object_size 0 bytes maximum_object_size 200 MB maximum_object_size_in_memory 512 KB
+
+工具：
+SquidMan：
+SquidMan is a MacOS X graphical installer and manager for the Squid proxy cache

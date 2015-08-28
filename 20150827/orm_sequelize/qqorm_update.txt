@@ -1,0 +1,3 @@
+User.find({ where: {firstName: 'John'} }).then(function(user) {
+  console.log(user);
+});

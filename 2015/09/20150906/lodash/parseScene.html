@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>parse scene</title>
+	<script type="text/javascript" src="./js/lodash.min.js"></script>
+	<script type="text/javascript" src="./js/jquery1.8.js"></script>
+	<script type="text/javascript" src="assignScene.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var elementsArrays=_.pluck(scene.list,"elements");	
+		console.log(elementsArrays);
+		var flattenElements=_.flatten(elementsArrays);
+		console.log(flattenElements);
+		var videoElements=_.where(flattenElements, {"type": "v"}); 
+		console.log(videoElements);
+		var srcArray=_.pluck(videoElements,"properties.src");	
+		console.log(srcArray);
+
+		//together
+		var iframeArray=_.chain(scene.list)
+						.pluck("elements")
+						.flatten()
+						.where({"type": "v"})
+						.pluck("properties.src")
+						.value();
+		console.log(iframeArray);
+
+		//把scene中的视频链接提取出来，成为如下数组
+		/*
+		["<iframe frameborder=\"0\" width=\"640\" height=\"498\" src=\"http://v.qq.com/iframe/player.html?vid=a0157ae20ku&tiny=0&auto=0\" allowfullscreen></iframe>","<iframe frameborder=\"0\" width=\"640\" height=\"498\" src=\"http://v.qq.com/iframe/player.html?vid=a0157ae20ku&tiny=0&auto=0\" allowfullscreen></iframe>"]
+		*/
+		function scene2iframeArray(scene){
+			return _.chain(scene.list)
+						.pluck("elements")
+						.flatten()
+						.where({"type": "v"})
+						.pluck("properties.src")
+						.value();
+		}
+		console.log(scene2iframeArray(scene));
+
+		var iframeCode="<iframe frameborder=\"0\" width=\"640\" height=\"498\" src=\"http://v.qq.com/iframe/player.html?vid=a0157ae20ku&tiny=0&auto=0\" allowfullscreen></iframe>";
+		function getSrc(iframeCode){
+			return $(iframeCode)[0].src;
+		}
+		var src=getSrc(iframeCode);
+		console.log(src);
+
+		//["http://v.qq.com/iframe/player.html?vid=a0157ae20ku&tiny=0&auto=0", "http://v.qq.com/iframe/player.html?vid=a0157ae20ku&tiny=0&auto=0"]
+		function scene2urlArray(scene){
+			return _.chain(scene.list)
+						.pluck("elements")
+						.flatten()
+						.where({"type": "v"})
+						.pluck("properties.src")
+						.map(getSrc)
+						.value();
+		}
+		var srcArray=scene2urlArray(scene);
+		console.log(srcArray);
+
+		function getVidFromQQLink(qqlink){
+				return qqlink.match(/vid=(\w+)/)[1];
+		}
+		//["a0157ae20ku", "a0157ae20ku"]
+		function scene2vidArray(scene){
+			return _.chain(scene.list)
+						.pluck("elements")
+						.flatten()
+						.where({"type": "v"})
+						.pluck("properties.src")
+						.map(getSrc)
+						.map(getVidFromQQLink)
+						.value();
+		}
+		var vidArray=scene2vidArray(scene);
+		console.log(vidArray);
+
+		function join(array){
+			return array.join("|");
+		}
+		var joinedArray=join(vidArray);
+		console.log(joinedArray);
+
+		//union
+
+		function scene2vidArrayUnique(scene){
+			return _.chain(scene.list)
+						.pluck("elements")
+						.flatten()
+						.where({"type": "v"})
+						.pluck("properties.src")
+						.map(getSrc)
+						.map(getVidFromQQLink)
+						.union()
+						.value();
+		}
+		var vidArray=scene2vidArrayUnique(scene);
+		console.log(vidArray);
+	</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+http://dwz.cn/
+百度短网址
+
+怎样调用百度短网址API？
+生成短网址
+请求：向dwz.cn/create.php发送post请求，发送数据包括url=长网址
+返回：json格式的数据
+status!=0 出错，查看err_msg获得错误信息（UTF-8编码）
+成功，返回生成的短网址 tinyurl字段

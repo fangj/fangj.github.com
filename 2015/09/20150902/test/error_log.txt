@@ -1,0 +1,5 @@
+616] PHP Warning:  file_put_contents(/var/www/html/test/abc.txt): failed to open stream: No such file or directory in /var/www/html/test.php on line 6
+[Wed Sep 02 04:17:39.466441 2015] [:error] [pid 14147] [client 58.213.224.242:15618] PHP Warning:  file_put_contents(/var/www/html/test/abc.txt): failed to open stream: Permission denied in /var/www/html/test.php on line 6
+[Wed Sep 02 04:23:25.770916 2015] [:error] [pid 14262] [client 58.213.224.242:15681] PHP Warning:  file_put_contents(/var/www/html/test/abc.txt): failed to open stream: Permission denied in /var/www/html/test.php on line 6
+[Wed Sep 02 04:45:15.176754 2015] [:error] [pid 14150] [client 58.213.224.242:16028] PHP Warning:  file_put_contents(/var/www/html/Application/Runtime/abc.txt): failed to open stream: Permission denied in /var/www/html/test/tw3.php on line 5
+~                    

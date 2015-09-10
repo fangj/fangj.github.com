@@ -1,0 +1,34 @@
+http://bugs.jquery.com/ticket/12385.
+http://draggabilly.desandro.com
+http://jquery.com/
+http://jquery.org/license
+http://jsperf.com/extract-nodename
+http://jsperf.com/joinclasses-args-vs-array
+http://jsperf.com/key-exists
+http://jsperf.com/key-missing
+http://jsperf.com/obj-vs-arr-iteration
+http://modernizr.com/docs/#prefixed), an `ms` prefix
+http://oli.me.uk/
+http://perfectionkills.com/feature-testing-css-properties/
+http://sizzlejs.com/
+http://unlicense.org/
+http://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
+http://www.apache.org/licenses/LICENSE-2.0
+http://www.openjs.com/scripts/events/keyboard_shortcuts/
+http://www.quirksmode.org/blog/archives/2010/09/click_event_del.html
+http://www.quirksmode.org/dom/events/scroll.html
+http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
+http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
+http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
+http://www.w3.org/TR/DOM-Level-3-Events/
+http://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
+http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
+http://www.w3.org/TR/clipboard-apis/
+http://www.w3.org/TR/touch-events/
+http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
+https://bugzilla.mozilla.org/show_bug.cgi?id=548397
+https://code.google.com/p/chromium/issues/detail?id=355103
+https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent#Key_names
+https://github.com/ded/bonzo
+https://github.com/tapmodo/Jcrop
+https://github.com/tzuryby/jquery.hotkeys

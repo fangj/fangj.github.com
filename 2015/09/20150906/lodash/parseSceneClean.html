@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>parse scene</title>
+	<script type="text/javascript" src="./js/lodash.min.js"></script>
+	<script type="text/javascript" src="./js/jquery1.8.js"></script>
+	<script type="text/javascript" src="assignScene.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		//把scene中的视频链接提取出来，成为如下字符串: a0157ae20ku|a0157ae20kx
+		function scene2vidString(scene){
+			function getSrc(iframeCode){
+				return $(iframeCode)[0].src;
+			}
+			function getVidFromQQLink(qqlink){
+				return qqlink.match(/vid=(\w+)/)[1];
+			}
+			function scene2vidArrayUnique(scene){
+				return _.chain(scene.list)
+							.pluck("elements")
+							.flatten()
+							.where({"type": "v"})
+							.pluck("properties.src")
+							.map(getSrc)
+							.map(getVidFromQQLink)
+							.union()
+							.value();
+			}
+			function join(array){
+				return array.join("|");
+			}
+			return join(scene2vidArrayUnique(scene));
+		}
+		var vids=scene2vidString(scene);
+		console.log(vids);
+	</script>
+</body>
+</html>

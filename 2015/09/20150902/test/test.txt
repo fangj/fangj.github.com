@@ -1,0 +1,13 @@
+<html>
+<body>
+<?php
+$path ="/var/www/html/test/abc.txt";
+$content = "one for all";
+file_put_contents($path,$content);
+if (file_exists($path))
+  {echo "ok";}
+else
+  {echo "ng";}
+?>
+</body>
+</html>

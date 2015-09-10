@@ -1,0 +1,511 @@
+Define("TimelineLite", ["core.Animation", "core.SimpleTimeline", "TweenLite"], function
+Define("TimelineMax", ["TimelineLite", "TweenLite", "easing.Ease"], function
+Define("TweenMax", ["core.Animation", "core.SimpleTimeline", "TweenLite"], function
+Define("easing.Back", ["easing.Ease"], function
+Define("plugins.CSSPlugin", ["plugins.TweenPlugin", "TweenLite"], function
+define("Raphael", ["eve"], function
+define("_e/cssanimate", function() {}), function
+define("_e/eraser", ["jquery"], function
+define("_g/ajax", ["jquery", "_g/base", "_g/error"], function
+define("_g/base", ["jquery", "backbone"], function
+define("_g/box_shadow", function() {}), function
+define("_g/clipboard", ["_g/base", "_g/device", "_g/file"], function
+define("_g/device", ["_g/base"], function
+define("_g/dropfile", ["_g/base"], function
+define("_g/error", ["_g/base"], function
+define("_g/event", ["_g/base"], function
+define("_g/file", ["_g/base"], function
+define("_g/generator", ["_g/base", "_g/util", "underscore", "text!_g/templates/buttonDropDown.js"], function
+define("_g/gettext", ["_g/base", "underscore", "text!_g/templates/i18n.js"], function
+define("_g/grid", ["_g/base", "underscore"], function
+define("_g/keyboard", ["_g/base", "_g/event"], function
+define("_g/mousewheel", ["_g/base", "_g/event"], function
+define("_g/mvc", ["jquery", "backbone", "_g/base", "_g/ui", "_g/util"], function
+define("_g/orientation", ["_g/base"], function
+define("_g/scrollview", ["_g/base", "jquery.hammer", "underscore", "jquery.transit", "iScroll"], function
+define("_g/slider", ["_g/base", "_g/event", "jquery.hammer"], function
+define("_g/style", ["_g/base", "underscore", "_g/box_shadow"], function
+define("_g/touch", ["_g/base", "jquery.hammer"], function
+define("_g/touchslide2", ["_g/base", "_g/touch", "jquery.hammer", "underscore", "jquery.transit", "backbone", "_g/keyboard", "_g/transition2"], function
+define("_g/transition2", ["_g/base", "jquery.transit", "_g/transitionargs"], function
+define("_g/transitionargs", ["_g/base"], function
+define("_g/ui", ["jquery", "_g/base", "_g/error"], function
+define("_g/util", ["jquery", "_g/base"], function
+define("applicationlist/main", ["lists/main", "global/main", "_g/ui", "upload/main", "preview/main", "text!applicationlist/template/list.js", "text!applicationlist/template/left.js", "text!applicationlist/template/right.js", "text!applicationlist/template/filter.js", "text!applicationlist/template/page.js", "text!applicationlist/template/menu.js", "text!applicationlist/template/listforused.js", "text!applicationlist/template/leftforused.js", "text!applicationlist/template/simple_listforused.js", "text!applicationlist/template/simple_right.js", "material/data/main", "_g/dropfile"], function
+define("backbone", ["underscore", "jquery"], function
+define("bootboxjs", ["bootstrap"], function() {}), function
+define("bootstrap", ["jquery"], function() {}), window.bootbox = window.bootbox || function init(e, t) {function
+define("css3Regions/pageEdit", function() {}), define("text!interaction/template/TempRegion.js", [], function
+define("diazo/js/app/main/interaction/main0902", function
+define("epub360/main", ["bootboxjs", "_g/ui", "text!epub360/template/limition.js"], function
+define("epub360/notice", ["bootboxjs", "jquery.nanoscroller", "jquery.cookie", "_g/ajax", "text!epub360/template/information.js", "text!epub360/template/messagebox.js"], function
+define("eve", [], function
+define("fontlist", ["jquery"], function
+define("fonts/collection/font", ["_g/mvc", "fonts/model/font"], function
+define("fonts/main", ["text!fonts/template/fonts_set.js", "text!fonts/template/font_define.js", "fonts/collection/font", "fonts/model/font", "text!fonts/template/fonts_addfav.js"], function
+define("fonts/model/font", ["_g/mvc", "fonts/view/font", "fonts/view/font_define", "fonts/view/font_local", "fonts/view/font_fav"], function
+define("fonts/view/font", ["text!fonts/template/font_item.js"], function
+define("fonts/view/font_define", ["text!fonts/template/font_define.js"], function
+define("fonts/view/font_fav", ["text!fonts/template/font_fav_item.js", "fonts/view/font_local"], function
+define("fonts/view/font_local", ["text!fonts/template/font_fav_item.js"], function
+define("fuelux/fuelux.spinner", ["jquery", "bootstrap"], function() {}), define("interaction/ui/region", ["css3Regions/pageEdit", "text!interaction/template/TempRegion.js", "fuelux/fuelux.spinner"], function
+define("global/data", ["jquery", "backbone", "bootstrap"], function() {}), function
+define("global/event", ["jquery", "backbone", "bootstrap"], function() {}), function
+define("global/main", ["epub360/main", "epub360/notification", "epub360/notice", "jquery", "backbone", "bootstrap", "jswait", "jqwait", "global/data", "global/template", "global/model", "global/event"], function() {}), define("text!interaction/template/element.js", [], function
+define("global/model", ["jquery", "backbone", "bootstrap"], function() {}), function() {function
+define("global/template", ["jquery", "backbone", "bootstrap"], function
+define("greensock/TweenMax", function() {}), define("text!interaction_view/template/slidenumber.js", [], function
+define("greensock/plugins/DrawSVGPlugin", function
+define("greensock/plugins/TextPlugin", function() {}), define("interaction_view/ui/animation", ["jquery", "backbone", "greensock/plugins/TextPlugin"], function
+define("hammerjs", [], function
+define("highcharts", [], function
+define("html2canvas", function() {}), define("text!fonts/template/fonts_set.js", [], function
+define("iScroll", function() {}), function
+define("interaction/collection/background", ["interaction/collection/page", "interaction/model/background"], function
+define("interaction/collection/cell", ["_g/mvc"], function
+define("interaction/collection/component", ["interaction/collection/page", "interaction/model/component"], function
+define("interaction/collection/form", ["_g/mvc", "interaction/model/form"], function
+define("interaction/collection/layer", ["interaction/collection/page", "interaction/model/layer"], function
+define("interaction/collection/master", ["interaction/collection/page", "interaction/model/master"], function
+define("interaction/collection/mirror", ["_g/mvc", "interaction/model/mirror"], function
+define("interaction/collection/page", ["_g/mvc", "interaction/model/page"], function
+define("interaction/collection/regionresource", ["_g/mvc", "interaction/model/regionresource"], function
+define("interaction/collection/uploadmanage", ["_g/mvc", "interaction/model/uploadmanage"], function
+define("interaction/data/cookie", ["jquery.cookie"], function
+define("interaction/data/main", ["_g/ajax"], function
+define("interaction/main", ["interaction/model/main", "interaction/collection/page", "interaction/ui/main", "interaction/data/main", "interaction/ui/editor", "interaction/ui/preview", "material/main", "interaction_view/touchmain", "interaction/ui/thumb", "_g/ajax", "_g/mvc", "_g/util", "_g/gettext", "jquery.nestable", "colorpicker", "interaction/tools/develop", "interaction/tools/googleevent", "fuelux/fuelux.spinner", "jquery.cookie", "interaction/data/cookie", "interaction_play/presentate", "jquery.nanoscroller", "applicationlist/main", "interaction/varible/main", "interaction_v2/util/component", "interaction_v2/util/componentlib", "text!interaction/template/h5_lib.js"], function
+define("interaction/model/AC", ["interaction/model/base", "text!interaction/template/AnimationControl.js", "text!interaction/template/AC_set.js", "text!interaction/template/actioncontrolpanel.js", "interaction/model/audio"], function
+define("interaction/model/BookButton", ["interaction/model/button", "text!interaction/template/BookButton.js", "interaction/model/TextLabel"], function
+define("interaction/model/Cell", ["interaction/model/subcontainer", "text!interaction/template/Cell.js"], function
+define("interaction/model/Grid", ["interaction/model/subcontainer", "text!interaction/template/Grid.js", "text!interaction/template/GridContent.js", "interaction/collection/cell", "interaction/model/gallery"], function
+define("interaction/model/PageIndex", ["_g/grid", "interaction/model/subcontainer", "text!interaction/template/PageIndex.js", "text!interaction/template/GridContent.js", "interaction/collection/cell", "text!interaction/template/page_resources_forindex.js"], function
+define("interaction/model/Region", ["interaction/model/richtext", "text!interaction/template/Region.js", "text!interaction/template/region_set.js", "text!interaction/template/region_column.js", "interaction/ui/editor", "css3Regions/pageEdit", "interaction/ui/region", "_g/util"], function
+define("interaction/model/SearchInput", ["interaction/model/base", "text!interaction/template/SearchInput.js", "text!interaction/template/SearchInput_content.js"], function
+define("interaction/model/TabBar", ["interaction/model/subcontainer", "text!interaction/template/TabBar.js"], function
+define("interaction/model/TextLabel", ["interaction/model/base", "text!interaction/template/richtext.js", "text!interaction/template/textStatic_set.js", "interaction/ui/editor", "text!interaction/template/Label.js", "_g/util"], function
+define("interaction/model/Tree", ["interaction/model/base", "text!interaction/template/Tree.js", "text!interaction/template/Tree_content.js"], function
+define("interaction/model/action", ["interaction/model/base", "text!interaction/template/actionitem.js", "text!interaction/template/actionpanel.js", "text!interaction/template/animationitem.js", "text!interaction/template/actionvariableitem.js", "text!interaction/template/actionvariableitemforapplication.js"], function
+define("interaction/model/actionforapplication", ["interaction/model/action", "text!interaction/template/actionitem.js", "text!interaction/template/actionpanel.js", "text!interaction/template/animationitem.js", "text!interaction/template/actionvariableitem.js"], function
+define("interaction/model/animation", ["interaction/model/base", "text!interaction/template/animationitem.js", "text!interaction/template/animationpanel.js", "text!interaction/template/animationitemformaster.js", "text!interaction/template/animationitemforbackground.js"], function
+define("interaction/model/animationfortimeline", ["interaction/model/animation", "text!interaction/template/animationitem.js"], function
+define("interaction/model/animationlib", ["interaction/model/base", "text!interaction/template/libitem.js"], function
+define("interaction/model/application", ["interaction/model/base", "text!interaction/template/applicationitem.js", "_g/ui", "text!interaction/template/formfield.js", "text!interaction/template/actionforapplication.js"], function
+define("interaction/model/audio", ["interaction/model/base", "text!interaction/template/audio.js", "text!interaction_view/template/audiocontrol.js"], function
+define("interaction/model/avatar", ["interaction/model/base", "text!interaction/template/avatar_style.js", "_g/util", "_g/style"], function
+define("interaction/model/avatarList", ["interaction/model/paragraph", "text!interaction/template/avatarListinfo.js", "text!interaction/template/avatarList.js", "text!interaction/template/avatarList_style.js"], function
+define("interaction/model/background", ["interaction/model/page", "interaction/view/background"], function
+define("interaction/model/base", ["global/main", "text!interaction/template/element.js", "text!interaction/template/animation.js", "text!interaction/template/action.js", "text!interaction/template/resources.js", "text!interaction/template/baseinfo.js", "text!interaction/template/infosave.js", "text!interaction/template/common.js", "text!interaction/template/slidenumber.js", "text!interaction/template/adapt_set.js", "text!interaction/template/sizeadapt_set.js", "interaction/ui/detail", "interaction/collection/cell", "text!interaction/template/initial_set.js", "interaction/varible/main"], function
+define("interaction/model/binding", ["interaction/model/base", "text!interaction/template/binding_set.js", "text!interaction/template/bindingpanel.js", "text!interaction/template/binding_opts.js"], function
+define("interaction/model/button", ["interaction/model/base"], function
+define("interaction/model/chartList", ["interaction/model/base", "text!interaction/template/chartList_content.js", "text!interaction/template/bindformfield.js"], function
+define("interaction/model/collision", ["interaction/model/base", "text!interaction/template/collision_elements.js"], function
+define("interaction/model/component", ["interaction/model/page", "interaction/view/component"], function
+define("interaction/model/componentref", ["interaction/model/base", "text!interaction/template/layerref.js", "text!interaction/template/layer_set.js", "interaction/view/layerresources"], function
+define("interaction/model/cycleimage", ["interaction/model/base"], function
+define("interaction/model/doc", ["interaction/model/base", "_g/mvc", "interaction/view/doc", "interaction/collection/page", "interaction/collection/layer", "interaction/collection/master", "interaction/collection/background", "interaction/collection/uploadmanage", "interaction/collection/component", "text!interaction/template/pagenumber.js", "interaction/ui/region"], function
+define("interaction/model/dom", ["interaction/model/base", "text!interaction/template/dom.js", "text!interaction/template/domforlayeroverlays.js", "text!interaction/template/actionforlayeroverlays.js"], function
+define("interaction/model/dragdrop", ["interaction/model/base", "text!interaction/template/dragdrop_area.js", "text!interaction/template/dragdrop_elements.js"], function
+define("interaction/model/dragdropgroup", ["interaction/model/base", "text!interaction/template/dragdrop_area.js", "text!interaction/template/dragdrop_elements.js"], function
+define("interaction/model/element", ["interaction/model/base"], function
+define("interaction/model/form", ["interaction/view/form"], function
+define("interaction/model/formview", ["interaction/model/webcontent", "text!interaction/template/FormView.js", "interaction/collection/form"], function
+define("interaction/model/gallery", ["_g/grid", "interaction/model/subcontainer", "text!interaction/template/Gallery.js", "text!interaction/template/GridContent.js", "interaction/collection/cell"], function
+define("interaction/model/image", ["interaction/model/base", "text!interaction/template/imagemask_set.js", "text!interaction/template/imagedraggable_set.js", "text!interaction/template/imageinfo.js"], function
+define("interaction/model/imageblock", ["interaction/model/base", "text!interaction/template/imageblock_style.js"], function
+define("interaction/model/infoForm", ["interaction/model/base"], function
+define("interaction/model/infoList", ["interaction/model/base", "text!interaction/template/infoList_content.js", "text!interaction/template/bindformfield.js"], function
+define("interaction/model/initButton", ["interaction/model/button"], function
+define("interaction/model/input", ["interaction/model/base", "text!interaction/template/input.js", "text!interaction/template/input_content.js"], function
+define("interaction/model/layer", ["interaction/model/page", "interaction/view/layer"], function
+define("interaction/model/layerref", ["interaction/model/base", "text!interaction/template/layerref.js", "text!interaction/template/layer_set.js", "interaction/view/layerresources"], function
+define("interaction/model/layerslide", ["interaction/model/layerref"], function
+define("interaction/model/link", ["interaction/model/base"], function
+define("interaction/model/main", ["interaction/model/action", "interaction/model/animation", "interaction/model/audio", "interaction/model/cycleimage", "interaction/model/dom", "interaction/model/element", "interaction/model/image", "interaction/model/link", "interaction/model/page", "interaction/model/resources", "interaction/model/richtext", "interaction/model/slide", "interaction/model/video", "interaction/model/webcontent", "interaction/model/pagelib", "interaction/model/overlaylib", "interaction/model/animationlib", "interaction/model/step", "interaction/model/button", "interaction/model/map", "interaction/model/pay", "interaction/model/doc", "interaction/model/layerref", "interaction/model/layerslide", "interaction/model/Region", "interaction/model/binding", "interaction/model/SearchInput", "interaction/model/Tree", "interaction/model/Grid", "interaction/model/Cell", "interaction/model/TextLabel", "interaction/model/TabBar", "interaction/model/gallery", "interaction/model/PageIndex", "interaction/model/formview", "interaction/model/AC", "interaction/model/shape", "interaction/model/BookButton", "interaction/model/dragdrop", "interaction/model/dragdropgroup", "interaction/model/variable", "interaction/model/timer", "interaction/model/vote", "interaction/model/paragraph", "interaction/model/input", "interaction/model/textarea", "interaction/model/application", "interaction/model/selectbutton", "interaction/model/submitbutton", "interaction/model/selectbox", "interaction/model/actionforapplication", "interaction/model/imageblock", "interaction/model/weixincamera", "interaction/model/weixinvoice", "interaction/model/infoList", "interaction/model/chartList", "interaction/model/textbutton", "interaction/model/animationfortimeline", "interaction/model/component", "interaction/model/componentref", "interaction/model/collision", "interaction/model/usersvg", "interaction/model/avatar", "interaction/model/avatarList", "interaction/model/initButton", "interaction/model/userList", "interaction/model/infoForm", "interaction/model/select"], function
+define("interaction/model/map", ["interaction/model/base", "text!interaction/template/map.js"], function
+define("interaction/model/master", ["interaction/model/page", "interaction/view/master"], function
+define("interaction/model/mirror", ["_g/mvc", "interaction/view/mirror"], function
+define("interaction/model/overlaylib", ["interaction/model/base", "text!interaction/template/libitem.js"], function
+define("interaction/model/page", ["_g/mvc", "interaction/view/page", "interaction/model/base"], function
+define("interaction/model/pagelib", ["interaction/model/base", "text!interaction/template/libitem.js", "_g/ui"], function
+define("interaction/model/paragraph", ["interaction/model/base", "text!interaction/template/textStatic_set.js", "text!interaction/template/paragraph.js", "text!interaction/template/paragraph_style.js", "_g/util", "_g/style"], function
+define("interaction/model/pay", ["interaction/model/base", "text!interaction/template/pay.js"], function
+define("interaction/model/regionresource", ["_g/mvc", "interaction/view/regionresource"], function
+define("interaction/model/resources", ["interaction/model/base", "text!interaction/template/resourcesitem.js", "preview/main", "text!interaction/template/slideactionpanel.js"], function
+define("interaction/model/richtext", ["interaction/model/base", "text!interaction/template/richtext.js", "text!interaction/template/textStatic_set.js", "interaction/ui/editor", "_g/util"], function
+define("interaction/model/select", ["interaction/model/input", "text!interaction/template/select.js", "text!interaction/template/select_content.js"], function
+define("interaction/model/selectbox", ["interaction/model/input", "text!interaction/template/selectbox.js", "text!interaction/template/selectbox_content.js"], function
+define("interaction/model/selectbutton", ["interaction/model/button", "text!interaction/template/selectbutton.js"], function
+define("interaction/model/shape", ["interaction/model/base", "text!interaction/template/shape.js"], function
+define("interaction/model/slide", ["interaction/model/base", "text!interaction/template/slide.js"], function
+define("interaction/model/step", ["interaction/model/base"], function
+define("interaction/model/subcontainer", ["interaction/model/base"], function
+define("interaction/model/submitbutton", ["interaction/model/button", "text!interaction/template/selectbutton.js"], function
+define("interaction/model/textarea", ["interaction/model/input", "text!interaction/template/input.js", "text!interaction/template/textarea_content.js"], function
+define("interaction/model/textbutton", ["interaction/model/paragraph"], function
+define("interaction/model/thumb", ["interaction/model/base", "text!interaction/template/thumbitem.js", "_g/ui"], function
+define("interaction/model/timer", ["interaction/model/base", "text!interaction/template/timer.js", "text!interaction/template/timer_action.js", "text!interaction/template/timer_actionItem.js", "text!interaction/template/timer_actionOption.js"], function
+define("interaction/model/uploadmanage", ["_g/mvc"], function
+define("interaction/model/userList", ["interaction/model/base"], function
+define("interaction/model/usersvg", ["interaction/model/base", "text!interaction/template/usersvg.js"], function
+define("interaction/model/variable", ["interaction/model/base", "text!interaction/template/variable.js", "text!interaction/template/variable_action.js", "text!interaction/template/variable_actionItem.js", "text!interaction/template/variable_actionOption.js"], function
+define("interaction/model/video", ["interaction/model/base"], function
+define("interaction/model/vote", ["interaction/model/base", "text!interaction/template/vote.js"], function
+define("interaction/model/webcontent", ["interaction/model/base", "text!interaction/template/WebContent.js"], function
+define("interaction/model/weixincamera", ["interaction/model/button", "text!interaction/template/weixincamera.js"], function
+define("interaction/model/weixinvoice", ["interaction/model/button", "text!interaction/template/weixincamera.js"], function
+define("interaction/tools/develop", ["text!interaction/template/develop.js", "_g/base"], function
+define("interaction/tools/googleevent", [], function
+define("interaction/ui/animation", ["interaction/model/base", "paperJS", "interaction_view/view/page"], function
+define("interaction/ui/application", ["interaction/model/base", "bootboxjs"], function
+define("interaction/ui/detail", ["underscore", "text!interaction/template/buttoninfo.js", "text!interaction/template/videoinfo.js", "text!interaction/template/linktype.js", "text!interaction/template/linkinfo.js", "text!interaction/template/slidetype.js", "text!interaction/template/cycleimageinfo.js", "text!interaction/template/paragraphinfo.js", "text!interaction/template/richtextinfo.js", "text!interaction/template/layerslideinfo.js", "text!interaction/template/layerrefinfo.js", "text!interaction/template/dragdropinfo.js", "text!interaction/template/imageblockinfo.js", "text!interaction/template/avatarinfo.js", "text!interaction/template/actiongroup.js", "text!interaction/template/infolist.js", "text!interaction/template/chartlist.js", "text!interaction/template/collisioninfo.js", "text!interaction/template/avatarListinfo.js", "text!interaction/template/infoForminfo.js", "text!interaction/template/shareapp_info.js"], function
+define("interaction/ui/draw", ["Raphael"], function
+define("interaction/ui/editor", ["global/main", "fontlist", "html2canvas", "_g/base", "fonts/main"], function
+define("interaction/ui/environment", ["underscore"], function
+define("interaction/ui/event", ["interaction/model/base", "_g/ui", "_g/event", "_g/dropfile", "_g/file", "_g/clipboard"], function
+define("interaction/ui/floatmenu", ["jquery", "underscore", "text!interaction/template/floatmenu.js", "text!interaction/template/contextmenu.js", "text!interaction/template/regionmenu.js"], function
+define("interaction/ui/formcontroler", ["interaction/widget/main", "text!interaction/template/spinner.js"], function
+define("interaction/ui/lib", ["underscore", "interaction/model/pagelib"], function
+define("interaction/ui/loadingsettings", ["interaction/widget/main"], function
+define("interaction/ui/main", ["global/main", "interaction/ui/animation", "interaction/ui/event", "interaction/ui/environment", "interaction/ui/resources", "interaction/ui/floatmenu", "interaction/ui/util", "interaction/ui/lib", "interaction/ui/draw", "interaction/ui/step", "interaction/ui/sort", "interaction/ui/formcontroler", "interaction/ui/loadingsettings", "interaction/ui/settings", "interaction/ui/presentationforedit", "text!global/templates/confirm.js", "text!interaction_view/template/message.js", "interaction/ui/application"], function
+define("interaction/ui/presentationforedit", ["text!interaction/template/preview_size.js"], function
+define("interaction/ui/preview", ["text!interaction/template/preview_size.js"], function
+define("interaction/ui/resources", ["interaction/model/base", "bootboxjs", "text!interaction/template/layer_resources.js", "interaction/view/layerresourcesforinsert", "interaction/collection/regionresource", "text!interaction/template/region_resources.js", "text!interaction/template/page_resources.js", "text!interaction/template/form_resources.js", "text!interaction/template/shareapp_resources.js", "interaction/view/componentresourcesforinsert"], function
+define("interaction/ui/settings", [], function
+define("interaction/ui/step", ["jquery"], function
+define("interaction/ui/thumb", ["interaction/model/thumb"], function
+define("interaction/ui/util", ["jquery", "underscore", "_g/ui", "interaction/collection/mirror", "text!interaction/template/mirror.js", "text!interaction/template/thumbitem.js"], function
+define("interaction/varible/v", [], function() {}), define("interaction/varible/common", [], function() {}), define("interaction/varible/ui", [], function() {}), define("interaction/varible/main", ["interaction/varible/v", "interaction/varible/common", "interaction/varible/ui"], function
+define("interaction/view/background", ["text!interaction/template/ipage.js", "interaction/view/background"], function
+define("interaction/view/component", ["text!interaction/template/component.js", "interaction/view/page"], function
+define("interaction/view/componentresourcesforinsert", ["text!interaction/template/component_resources_item.js"], function
+define("interaction/view/doc", ["_g/mvc", "text!interaction/template/docinfo.js", "text!interaction/template/docplayersettings_w.js", "text!interaction/template/docloadingsettings.js"], function
+define("interaction/view/form", ["text!interaction/template/form.js"], function
+define("interaction/view/layer", ["text!interaction/template/layer.js", "interaction/view/page"], function
+define("interaction/view/layerresources", ["text!interaction/template/layer_item.js", "text!interaction/template/layeractionpanel.js", "text!interaction/template/pageindex_item.js"], function
+define("interaction/view/layerresourcesforinsert", ["text!interaction/template/layer_resources_item.js"], function
+define("interaction/view/master", ["text!interaction/template/ipage.js", "interaction/view/page"], function
+define("interaction/view/mirror", ["text!interaction/template/mirror.js"], function
+define("interaction/view/page", ["_g/mvc", "text!interaction/template/ipage.js", "text!interaction/template/page_info.js", "text!interaction/template/infosave.js", "text!interaction/template/pagegroup.js", "text!interaction/template/animationgroup.js"], function
+define("interaction/view/regionresource", ["text!interaction/template/region_resource_item.js"], function
+define("interaction/widget/info/bg_color", ["text!interaction/widget/info/template/bg_color.js"], function
+define("interaction/widget/info/bg_opacity", ["text!interaction/widget/info/template/bg_opacity.js"], function
+define("interaction/widget/info/code", ["text!interaction/widget/info/template/code.js"], function
+define("interaction/widget/info/custom_color", ["text!interaction/widget/info/template/custom_color.js"], function
+define("interaction/widget/info/fill_color", ["text!interaction/widget/info/template/fill_color.js"], function
+define("interaction/widget/info/fill_opacity", ["text!interaction/widget/info/template/fill_opacity.js"], function
+define("interaction/widget/info/font_color", ["text!interaction/widget/info/template/font_color.js"], function
+define("interaction/widget/info/font_size", ["text!interaction/widget/info/template/font_size.js"], function
+define("interaction/widget/info/grid", ["text!interaction/widget/info/template/grid.js"], function
+define("interaction/widget/info/img_display", ["text!interaction/widget/info/template/img_display.js"], function
+define("interaction/widget/info/static", [], function
+define("interaction/widget/info/stroke_color", ["text!interaction/widget/info/template/stroke_color.js"], function
+define("interaction/widget/info/stroke_opacity", ["text!interaction/widget/info/template/stroke_opacity.js"], function
+define("interaction/widget/main", ["interaction/model/base", "interaction/widget/info/bg_opacity", "interaction/widget/info/bg_color", "interaction/widget/info/fill_opacity", "interaction/widget/info/fill_color", "interaction/widget/info/stroke_opacity", "interaction/widget/info/stroke_color", "interaction/widget/info/font_size", "interaction/widget/info/font_color", "interaction/widget/info/grid", "interaction/widget/info/static", "interaction/widget/info/code", "interaction/widget/info/img_display", "interaction/widget/info/custom_color"], function
+define("interaction_play/presentate", ["bootstrap"], function() {}), define("text!applicationlist/template/list.js", [], function
+define("interaction_v2/util/component", ["interaction/model/base"], function
+define("interaction_v2/util/componentlib", ["interaction/model/base"], function
+define("interaction_view/collection/background", ["interaction_view/collection/page", "interaction_view/model/background", "interaction_view/view/background"], function
+define("interaction_view/collection/component", ["interaction_view/collection/page", "interaction_view/model/component"], function
+define("interaction_view/collection/layer", ["interaction_view/collection/page", "interaction_view/model/layer"], function
+define("interaction_view/collection/master", ["interaction_view/collection/page", "interaction_view/model/master", "interaction_view/view/master"], function
+define("interaction_view/collection/page", ["_g/mvc", "interaction_view/model/page"], function
+define("interaction_view/model/BookButton", ["interaction_view/model/TextLabel"], function
+define("interaction_view/model/Cell", ["interaction_view/model/SubContainer"], function
+define("interaction_view/model/Grid", ["interaction_view/model/gallery"], function
+define("interaction_view/model/PageIndex", ["interaction_view/model/SubContainer"], function
+define("interaction_view/model/SearchInput", ["interaction_view/model/base"], function
+define("interaction_view/model/SubContainer", ["interaction_view/model/base", "interaction_view/view/subcontainer"], function
+define("interaction_view/model/TabBar", ["interaction_view/model/SubContainer"], function
+define("interaction_view/model/TextLabel", ["interaction_view/model/base"], function
+define("interaction_view/model/Tree", ["interaction_view/model/base", "text!interaction_view/template/Tree_content.js"], function
+define("interaction_view/model/action", ["interaction_view/model/base", "interaction_view/ui/animation"], function
+define("interaction_view/model/animation_view", ["interaction_view/model/base", "interaction_view/ui/animation"], function
+define("interaction_view/model/audio", ["interaction_view/model/base", "text!interaction_view/template/audiocontrol.js", "_g/slider"], function
+define("interaction_view/model/avatar", ["_g/ajax", "interaction_view/model/vote", "interaction_view/model/avatarList"], function
+define("interaction_view/model/avatarList", ["_g/ajax", "interaction_view/model/base"], function
+define("interaction_view/model/background", ["interaction_view/model/page"], function
+define("interaction_view/model/base", ["jquery", "backbone", "greensock/TweenMax", "text!interaction_view/template/message.js", "text!interaction_view/template/slidenumber.js", "text!interaction_view/template/imgpreview.js", "interaction_view/view/subcontainer", "greensock/plugins/DrawSVGPlugin", "interaction_view/template/t", "_g/scrollview"], function
+define("interaction_view/model/binding", ["interaction_view/model/base"], function
+define("interaction_view/model/button", ["interaction_view/model/base"], function
+define("interaction_view/model/chapter", ["interaction_view/model/base"], function
+define("interaction_view/model/chartList", ["interaction_view/model/base", "highcharts", "text!interaction/template/chartList_content.js"], function
+define("interaction_view/model/collision", ["interaction_view/model/base"], function
+define("interaction_view/model/component", ["interaction_view/model/page"], function
+define("interaction_view/model/componentref", ["interaction_view/model/layerref"], function
+define("interaction_view/model/cycleimage", ["interaction_view/model/base", "interaction_view/ui/animation", "_g/base"], function
+define("interaction_view/model/doc", ["_g/mvc", "interaction_view/collection/page", "interaction_view/view/page", "interaction_view/collection/layer", "interaction_view/collection/master", "interaction_view/collection/background", "interaction_view/collection/component"], function
+define("interaction_view/model/dragdrop", ["interaction_view/model/base"], function
+define("interaction_view/model/dragdropgroup", ["interaction_view/model/base"], function
+define("interaction_view/model/formview", ["interaction_view/model/webcontent"], function
+define("interaction_view/model/gallery", ["interaction_view/model/SubContainer"], function
+define("interaction_view/model/image", ["interaction_view/model/base", "text!interaction_view/template/imageitem.js"], function
+define("interaction_view/model/imageblock", ["interaction_view/model/base"], function
+define("interaction_view/model/infoForm", ["interaction_view/model/userList"], function
+define("interaction_view/model/infoList", ["interaction_view/model/base", "text!interaction/template/infoList_content.js", "text!interaction_view/template/prompt.js"], function
+define("interaction_view/model/initButton", ["interaction_view/model/base"], function
+define("interaction_view/model/input", ["interaction_view/model/base"], function
+define("interaction_view/model/layer", ["interaction_view/model/page"], function
+define("interaction_view/model/layerref", ["interaction_view/model/base", "interaction_view/view/layer"], function
+define("interaction_view/model/layerslide", ["interaction_view/model/layerref"], function
+define("interaction_view/model/link", ["interaction_view/model/base"], function
+define("interaction_view/model/main", ["interaction_view/model/action", "interaction_view/model/animation_view", "interaction_view/model/audio", "interaction_view/model/chapter", "interaction_view/model/cycleimage", "interaction_view/model/image", "interaction_view/model/page", "interaction_view/model/doc", "interaction_view/model/preload", "interaction_view/model/richtext", "interaction_view/model/slide", "interaction_view/model/video", "interaction_view/model/button", "interaction_view/model/map", "interaction_view/model/pay", "interaction_view/model/link", "interaction_view/model/layerref", "interaction_view/model/layerslide", "interaction_view/model/binding", "interaction_view/model/Grid", "interaction_view/model/Cell", "interaction_view/model/TextLabel", "interaction_view/model/TabBar", "interaction_view/model/SearchInput", "interaction_view/model/Tree", "interaction_view/model/gallery", "interaction_view/model/PageIndex", "interaction_view/model/webcontent", "interaction_view/model/formview", "interaction_view/model/shape", "interaction_view/model/BookButton", "interaction_view/model/dragdrop", "interaction_view/model/dragdropgroup", "interaction_view/model/variable", "interaction_view/model/timer", "interaction_view/model/vote", "interaction_view/model/paragraph", "interaction_view/model/input", "interaction_view/model/textarea", "interaction_view/model/selectbutton", "interaction_view/model/submitbutton", "interaction_view/model/selectbox", "interaction_view/model/imageblock", "interaction_view/model/weixincamera", "interaction_view/model/weixinvoice", "interaction_view/model/infoList", "interaction_view/model/chartList", "interaction_view/model/component", "interaction_view/model/componentref", "interaction_view/model/textbutton", "interaction_view/model/collision", "interaction_view/model/usersvg", "interaction_view/model/avatar", "interaction_view/model/avatarList", "interaction_view/model/initButton", "interaction_view/model/userList", "interaction_view/model/infoForm", "interaction_view/model/select"], function() {}), define("text!interaction_view/template/alertbox.js", [], function
+define("interaction_view/model/map", ["interaction_view/model/base"], function
+define("interaction_view/model/master", ["interaction_view/model/page"], function
+define("interaction_view/model/page", ["_g/mvc", "interaction_view/view/page"], function
+define("interaction_view/model/paragraph", ["interaction_view/model/base", "text!interaction_view/template/prompt.js"], function
+define("interaction_view/model/pay", ["interaction_view/model/base"], function
+define("interaction_view/model/preload", ["interaction_view/model/base", "text!interaction_view/template/preload.js"], function
+define("interaction_view/model/richtext", ["interaction_view/model/base"], function
+define("interaction_view/model/select", ["interaction_view/model/base"], function
+define("interaction_view/model/selectbox", ["interaction_view/model/base"], function
+define("interaction_view/model/selectbutton", ["interaction_view/model/button"], function
+define("interaction_view/model/shape", ["interaction_view/model/base"], function
+define("interaction_view/model/slide", ["interaction_view/model/base"], function
+define("interaction_view/model/submitbutton", ["interaction_view/model/button"], function
+define("interaction_view/model/textarea", ["interaction_view/model/base"], function
+define("interaction_view/model/textbutton", ["interaction_view/model/paragraph"], function
+define("interaction_view/model/timer", ["interaction_view/model/base"], function
+define("interaction_view/model/userList", ["interaction_view/model/base"], function
+define("interaction_view/model/usersvg", ["interaction_view/model/base"], function
+define("interaction_view/model/variable", ["interaction_view/model/base"], function
+define("interaction_view/model/video", ["interaction_view/model/base"], function
+define("interaction_view/model/vote", ["_g/ajax", "interaction_view/model/base"], function
+define("interaction_view/model/webcontent", ["interaction_view/model/base", "text!interaction_view/template/offline_info.js"], function
+define("interaction_view/model/weixincamera", ["interaction_view/model/button"], function
+define("interaction_view/model/weixinvoice", ["interaction_view/model/button"], function
+define("interaction_view/template/t", function() {}), function(e, t) {function
+define("interaction_view/ui/adapt", [], function
+define("interaction_view/ui/analytics", ["text!interaction_view/template/analytics.js"], function
+define("interaction_view/ui/application", ["text!interaction_view/template/alertbox.js"], function
+define("interaction_view/ui/control", [], function
+define("interaction_view/ui/environment", ["underscore"], function
+define("interaction_view/ui/event", ["_g/ui", "_g/event", "_g/orientation", "shake"], function
+define("interaction_view/ui/main", ["jquery", "backbone", "text!interaction_view/template/message.js", "text!interaction_view/template/alertbox.js"], function
+define("interaction_view/ui/presentation", ["jswait", "_g/ui", "text!interaction_view/template/pagenumber.js"], function
+define("interaction_view/ui/screenset", ["text!interaction_view/template/controlbar.js", "_g/device"], function
+define("interaction_view/ui/timeline", ["interaction_view/model/base"], function
+define("interaction_view/ui/touchinit", [], function
+define("interaction_view/ui/weixin", [], function
+define("interaction_view/view/background", ["interaction_view/view/page"], function
+define("interaction_view/view/layer", ["interaction_view/view/page"], function
+define("interaction_view/view/master", ["interaction_view/view/page"], function
+define("interaction_view/view/page", ["_g/mvc", "text!interaction_view/template/page.js", "text!interaction_view/template/pagegroup.js"], function
+define("interaction_view/view/subcontainer", ["interaction_view/view/page"], function
+define("jquery", [], function
+define("jquery.actual", ["jquery"], function() {}), define("text!interaction_view/template/controlbar.js", [], function
+define("jquery.nanoscroller", ["jquery"], function() {}), define("epub360/notification", ["backbone", "bootboxjs", "jquery.nanoscroller"], function
+define("jquery.nestable", ["jquery"], function() {}), define("interaction/ui/sort", ["jquery.nestable"], function
+define("jquery.transit", ["jquery"], function() {}), function(e, t, n) {function
+define("jqueryui", ["jquery"], function() {}), define("lists/model/list", ["global/main"], function() {function
+define("jqwait", function() {}), function
+define("jswait", ["jquery"], function
+define("jwplayer/jwplayer", function() {}), define("interaction_view/ui/media", ["mediaelementjs", "jwplayer/jwplayer"], function
+define("lists/main", ["global/main", "jqueryui", "lists/model/list"], function
+define("material/data/main", ["_g/ajax"], function
+define("material/main", ["lists/main", "global/main", "_g/ui", "upload/main", "preview/main", "text!material/template/list.js", "text!material/template/left.js", "text!material/template/right.js", "text!material/template/filter.js", "text!material/template/page.js", "text!material/template/menu.js", "text!material/template/listforused.js", "text!material/template/leftforused.js", "text!material/template/simple_listforused.js", "text!material/template/simple_right.js", "material/data/main", "_g/dropfile"], function
+define("mediaelementjs", ["jquery"], function() {}), window.preview = function
+define("paperJS", function() {}), define("text!interaction_view/template/page.js", [], function
+define("preview/main", ["mediaelementjs", "underscore"], function() {}), define("text!interaction/template/slideactionpanel.js", [], function
+define("screenfull", function() {}), define("interaction_view/touchmain", ["interaction_view/model/main", "interaction_view/ui/main", "interaction_view/ui/presentation", "interaction_view/ui/control", "interaction_view/ui/event", "interaction_view/ui/environment", "interaction_view/ui/media", "interaction_view/ui/adapt", "interaction_view/ui/analytics", "interaction_view/ui/application", "interaction_view/ui/weixin", "_g/touchslide2", "_g/device", "_g/mousewheel", "share/main", "jquery.actual", "interaction_view/ui/screenset", "interaction_view/ui/touchinit", "interaction_view/ui/timeline", "coverFlow", "_e/eraser", "_e/cssanimate", "screenfull"], function
+define("shake", [], function
+define("share/main", function() {}), function
+define("text!_g/templates/buttonDropDown.js", [], function
+define("text!_g/templates/i18n.js", [], function
+define("text!applicationlist/template/filter.js", [], function
+define("text!applicationlist/template/left.js", [], function
+define("text!applicationlist/template/leftforused.js", [], function
+define("text!applicationlist/template/listforused.js", [], function
+define("text!applicationlist/template/menu.js", [], function
+define("text!applicationlist/template/page.js", [], function
+define("text!applicationlist/template/right.js", [], function
+define("text!applicationlist/template/simple_listforused.js", [], function
+define("text!applicationlist/template/simple_right.js", [], function
+define("text!epub360/template/information.js", [], function
+define("text!epub360/template/limition.js", [], function
+define("text!epub360/template/messagebox.js", [], function
+define("text!fonts/template/font_define.js", [], function
+define("text!fonts/template/font_fav_item.js", [], function
+define("text!fonts/template/font_item.js", [], function
+define("text!fonts/template/fonts_addfav.js", [], function
+define("text!global/templates/confirm.js", [], function
+define("text!interaction/template/AC_set.js", [], function
+define("text!interaction/template/AnimationControl.js", [], function
+define("text!interaction/template/BookButton.js", [], function
+define("text!interaction/template/Cell.js", [], function
+define("text!interaction/template/FormView.js", [], function
+define("text!interaction/template/Gallery.js", [], function
+define("text!interaction/template/Grid.js", [], function
+define("text!interaction/template/GridContent.js", [], function
+define("text!interaction/template/Label.js", [], function
+define("text!interaction/template/PageIndex.js", [], function
+define("text!interaction/template/Region.js", [], function
+define("text!interaction/template/SearchInput.js", [], function
+define("text!interaction/template/SearchInput_content.js", [], function
+define("text!interaction/template/TabBar.js", [], function
+define("text!interaction/template/Tree.js", [], function
+define("text!interaction/template/Tree_content.js", [], function
+define("text!interaction/template/WebContent.js", [], function
+define("text!interaction/template/action.js", [], function
+define("text!interaction/template/actioncontrolpanel.js", [], function
+define("text!interaction/template/actionforapplication.js", [], function
+define("text!interaction/template/actionforlayeroverlays.js", [], function
+define("text!interaction/template/actiongroup.js", [], function
+define("text!interaction/template/actionitem.js", [], function
+define("text!interaction/template/actionpanel.js", [], function
+define("text!interaction/template/actionvariableitem.js", [], function
+define("text!interaction/template/actionvariableitemforapplication.js", [], function
+define("text!interaction/template/adapt_set.js", [], function
+define("text!interaction/template/animation.js", [], function
+define("text!interaction/template/animationgroup.js", [], function
+define("text!interaction/template/animationitem.js", [], function
+define("text!interaction/template/animationitemforbackground.js", [], function
+define("text!interaction/template/animationitemformaster.js", [], function
+define("text!interaction/template/animationpanel.js", [], function
+define("text!interaction/template/applicationitem.js", [], function
+define("text!interaction/template/audio.js", [], function
+define("text!interaction/template/avatarList.js", [], function
+define("text!interaction/template/avatarList_style.js", [], function
+define("text!interaction/template/avatarListinfo.js", [], function
+define("text!interaction/template/avatar_style.js", [], function
+define("text!interaction/template/avatarinfo.js", [], function
+define("text!interaction/template/baseinfo.js", [], function
+define("text!interaction/template/bindformfield.js", [], function
+define("text!interaction/template/binding_opts.js", [], function
+define("text!interaction/template/binding_set.js", [], function
+define("text!interaction/template/bindingpanel.js", [], function
+define("text!interaction/template/buttoninfo.js", [], function
+define("text!interaction/template/chartList_content.js", [], function
+define("text!interaction/template/chartlist.js", [], function
+define("text!interaction/template/collision_elements.js", [], function
+define("text!interaction/template/collisioninfo.js", [], function
+define("text!interaction/template/common.js", [], function
+define("text!interaction/template/component.js", [], function
+define("text!interaction/template/component_resources_item.js", [], function
+define("text!interaction/template/contextmenu.js", [], function
+define("text!interaction/template/cycleimageinfo.js", [], function
+define("text!interaction/template/develop.js", [], function
+define("text!interaction/template/docinfo.js", [], function
+define("text!interaction/template/docloadingsettings.js", [], function
+define("text!interaction/template/docplayersettings_w.js", [], function
+define("text!interaction/template/dom.js", [], function
+define("text!interaction/template/domforlayeroverlays.js", [], function
+define("text!interaction/template/dragdrop_area.js", [], function
+define("text!interaction/template/dragdrop_elements.js", [], function
+define("text!interaction/template/dragdropinfo.js", [], function
+define("text!interaction/template/floatmenu.js", [], function
+define("text!interaction/template/form.js", [], function
+define("text!interaction/template/form_resources.js", [], function
+define("text!interaction/template/formfield.js", [], function
+define("text!interaction/template/h5_lib.js", [], function
+define("text!interaction/template/imageblock_style.js", [], function
+define("text!interaction/template/imageblockinfo.js", [], function
+define("text!interaction/template/imagedraggable_set.js", [], function
+define("text!interaction/template/imageinfo.js", [], function
+define("text!interaction/template/imagemask_set.js", [], function
+define("text!interaction/template/infoForminfo.js", [], function
+define("text!interaction/template/infoList_content.js", [], function
+define("text!interaction/template/infolist.js", [], function
+define("text!interaction/template/infosave.js", [], function
+define("text!interaction/template/initial_set.js", [], function
+define("text!interaction/template/input.js", [], function
+define("text!interaction/template/input_content.js", [], function
+define("text!interaction/template/ipage.js", [], function
+define("text!interaction/template/layer.js", [], function
+define("text!interaction/template/layer_item.js", [], function
+define("text!interaction/template/layer_resources.js", [], function
+define("text!interaction/template/layer_resources_item.js", [], function
+define("text!interaction/template/layer_set.js", [], function
+define("text!interaction/template/layeractionpanel.js", [], function
+define("text!interaction/template/layerref.js", [], function
+define("text!interaction/template/layerrefinfo.js", [], function
+define("text!interaction/template/layerslideinfo.js", [], function
+define("text!interaction/template/libitem.js", [], function
+define("text!interaction/template/linkinfo.js", [], function
+define("text!interaction/template/linktype.js", [], function
+define("text!interaction/template/map.js", [], function
+define("text!interaction/template/mirror.js", [], function
+define("text!interaction/template/page_info.js", [], function
+define("text!interaction/template/page_resources.js", [], function
+define("text!interaction/template/page_resources_forindex.js", [], function
+define("text!interaction/template/pagegroup.js", [], function
+define("text!interaction/template/pageindex_item.js", [], function
+define("text!interaction/template/pagenumber.js", [], function
+define("text!interaction/template/paragraph.js", [], function
+define("text!interaction/template/paragraph_style.js", [], function
+define("text!interaction/template/paragraphinfo.js", [], function
+define("text!interaction/template/pay.js", [], function
+define("text!interaction/template/preview_size.js", [], function
+define("text!interaction/template/region_column.js", [], function
+define("text!interaction/template/region_resource_item.js", [], function
+define("text!interaction/template/region_resources.js", [], function
+define("text!interaction/template/region_set.js", [], function
+define("text!interaction/template/regionmenu.js", [], function
+define("text!interaction/template/resources.js", [], function
+define("text!interaction/template/resourcesitem.js", [], function
+define("text!interaction/template/richtext.js", [], function
+define("text!interaction/template/richtextinfo.js", [], function
+define("text!interaction/template/select.js", [], function
+define("text!interaction/template/select_content.js", [], function
+define("text!interaction/template/selectbox.js", [], function
+define("text!interaction/template/selectbox_content.js", [], function
+define("text!interaction/template/selectbutton.js", [], function
+define("text!interaction/template/shape.js", [], function
+define("text!interaction/template/shareapp_info.js", [], function
+define("text!interaction/template/shareapp_resources.js", [], function
+define("text!interaction/template/sizeadapt_set.js", [], function
+define("text!interaction/template/slide.js", [], function
+define("text!interaction/template/slidenumber.js", [], function
+define("text!interaction/template/slidetype.js", [], function
+define("text!interaction/template/spinner.js", [], function
+define("text!interaction/template/textStatic_set.js", [], function
+define("text!interaction/template/textarea_content.js", [], function
+define("text!interaction/template/thumbitem.js", [], function
+define("text!interaction/template/timer.js", [], function
+define("text!interaction/template/timer_action.js", [], function
+define("text!interaction/template/timer_actionItem.js", [], function
+define("text!interaction/template/timer_actionOption.js", [], function
+define("text!interaction/template/usersvg.js", [], function
+define("text!interaction/template/variable.js", [], function
+define("text!interaction/template/variable_action.js", [], function
+define("text!interaction/template/variable_actionItem.js", [], function
+define("text!interaction/template/variable_actionOption.js", [], function
+define("text!interaction/template/videoinfo.js", [], function
+define("text!interaction/template/vote.js", [], function
+define("text!interaction/template/weixincamera.js", [], function
+define("text!interaction/widget/info/template/bg_color.js", [], function
+define("text!interaction/widget/info/template/bg_opacity.js", [], function
+define("text!interaction/widget/info/template/code.js", [], function
+define("text!interaction/widget/info/template/custom_color.js", [], function
+define("text!interaction/widget/info/template/fill_color.js", [], function
+define("text!interaction/widget/info/template/fill_opacity.js", [], function
+define("text!interaction/widget/info/template/font_color.js", [], function
+define("text!interaction/widget/info/template/font_size.js", [], function
+define("text!interaction/widget/info/template/grid.js", [], function
+define("text!interaction/widget/info/template/img_display.js", [], function
+define("text!interaction/widget/info/template/stroke_color.js", [], function
+define("text!interaction/widget/info/template/stroke_opacity.js", [], function
+define("text!interaction_view/template/Tree_content.js", [], function
+define("text!interaction_view/template/analytics.js", [], function
+define("text!interaction_view/template/audiocontrol.js", [], function
+define("text!interaction_view/template/imageitem.js", [], function
+define("text!interaction_view/template/imgpreview.js", [], function
+define("text!interaction_view/template/message.js", [], function
+define("text!interaction_view/template/offline_info.js", [], function
+define("text!interaction_view/template/pagegroup.js", [], function
+define("text!interaction_view/template/pagenumber.js", [], function
+define("text!interaction_view/template/preload.js", [], function
+define("text!interaction_view/template/prompt.js", [], function
+define("text!material/template/filter.js", [], function
+define("text!material/template/left.js", [], function
+define("text!material/template/leftforused.js", [], function
+define("text!material/template/list.js", [], function
+define("text!material/template/listforused.js", [], function
+define("text!material/template/menu.js", [], function
+define("text!material/template/page.js", [], function
+define("text!material/template/right.js", [], function
+define("text!material/template/simple_listforused.js", [], function
+define("text!material/template/simple_right.js", [], function
+define("text!rightpanel/share.js", [], function
+define("text", ["module"], function
+define("underscore", function
+define("uploadify", ["jquery"], function() {}), define("upload/main", ["dropzone", "_g/ui", "bootboxjs", "uploadify"], function

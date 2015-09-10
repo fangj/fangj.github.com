@@ -1,0 +1,20 @@
+{
+  "name": "zhishi-public",
+  "version": "1.0.0",
+  "description": "用gitbook整理知识",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-code_tomorrow_scheme": "^0.1.3",
+    "gitbook-plugin-google_code_prettify": "0.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:fangj/zhishi-public.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

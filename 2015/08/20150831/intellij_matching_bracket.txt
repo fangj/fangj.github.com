@@ -1,0 +1,19 @@
+o navigate to the code block start, press ⌥ ⌘ Open Bracket, with the caret anywhere inside the code block.
+The caret jumps to the opening brace of the current code block.
+To navigate to the code block end, press ⌥ ⌘ Close Bracket, with the caret anywhere inside the code block.
+The caret jumps to the closing brace of the current code block.
+To toggle between code block start or end, invoke the action Move Caret to Matched Brace. This action has no default keyboard shortcut, and can be found by ⇧ ⌘ A.
+
+https://www.jetbrains.com/idea/help/navigating-to-braces.html
+On Windows:
+
+Ctrl+} will move to the close bracket.
+
+Ctrl+{ will move to the open bracket.
+
+On Mac:
+
+Use cmd instead of Ctrl.
+
+
+http://stackoverflow.com/questions/4351081/intellij-idea-shortcut-keymap-for-matching-bracket

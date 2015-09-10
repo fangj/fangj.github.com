@@ -1,0 +1,31 @@
+
+squid运行时发现已经有一个实例，会拒绝允许，
+在配置文件中增加：
+
+pid_filename /var/run/squid-route.pid
+
+cd /var/spool/
+mkdir squid-route/
+chown squid squid-route/
+chgrp squid squid-route/
+
+squid -f /etc/squid/squid-route.conf -z
+
+
+[root@iZ23wwlryfnZ init.d]# vim route
+
+chkconfig route on
+service route start
+
+最终部署在金智服务器上的是2个服务map和route
+map相当于suqid -f /etc/squid/squid.conf
+route相当于suqid -f /etc/squid/squid-route.conf
+
+启动：
+service map start
+service route start
+
+只允许地图图片被获取：
+
+acl map url_regex ^http://zb.dreamvoc.com:8888/v2/.*
+http_access allow map

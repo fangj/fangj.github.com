@@ -1,0 +1,31 @@
+yum install squid
+
+Squid Cache: Version 3.1.23
+vim /etc/squid/squid.conf
+
+cache_dir ufs /var/spool/squid 500 16 256
+http_access allow all
+
+acl Safe_ports port 3000                # route
+acl Safe_ports port 8888                # map
+
+http_port 18888 accel defaultsite=zb.dreamvoc.com:8888
+
+cache_peer zb.dreamvoc.com parent 8888 0 no-query originserver name=myAccel
+/usr/sbin/squid -f /etc/squid/squid-map.conf $@
+
+检查配置参数是否有错
+
+squid -k parse
+
+初始化缓存：
+
+squid -z
+
+启动服务：
+
+service squid start
+
+查看端口是否打开：
+
+netstat -ntpl
